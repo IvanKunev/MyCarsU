@@ -17,6 +17,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { ToastrModule } from 'ngx-toastr';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from './_modules/shared.module';
 
 
 @NgModule({
@@ -36,10 +37,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    BsDropdownModule.forRoot(),
-    ToastrModule.forRoot({
-      positionClass:'toast-bottom-right'
-    }),
+    SharedModule,
     FontAwesomeModule,
     NgbModule
   ],
